@@ -20,8 +20,6 @@ namespace Cafe.Tests
 			Assert.AreEqual(20, pris);
 		}
 
-		
-
 		[TestMethod()]
 		public void styrkeTest()
 		{
@@ -29,5 +27,42 @@ namespace Cafe.Tests
 			string styrke = kaffe.styrke();
 			Assert.AreEqual("stærk", styrke);
 		}
+
+		[TestMethod()]
+
+		public void prisTestKaffeLatte()
+		{
+			var kaffe = new Latte();
+			int pris = kaffe.pris();
+			Assert.AreEqual(10, pris);
+		}
+
+		[TestMethod()]
+		public void styrkeTestLatte()
+		{
+			var kaffe = new Latte();
+			string styrke = kaffe.styrke();
+			Assert.AreEqual("stærk", styrke);
+		}
+
+		[TestMethod()]
+
+		public void prisTestKaffeCortado()
+		{
+			var kaffe = new Cortado();
+			int pris = kaffe.pris();
+			Assert.AreEqual(30, pris);
+		}
+
+		[TestMethod()]
+		public void styrkeTestCortado()
+		{
+			var kaffe = new Cortado();
+			string styrke = kaffe.styrke();
+			Assert.AreEqual("stærk", styrke);
+		}
+
+
+
 	}
 }
