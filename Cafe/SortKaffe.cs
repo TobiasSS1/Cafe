@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace Cafe
 {
-    public abstract class Cafe	
-    {
-		public abstract int pris();
-		
-
-		public virtual string styrke()
+	public class SortKaffe : Cafe
+	{
+		public override int pris()
 		{
-			return "stærk";
+			return 20;
 		}
-
-
-    }
+	}
 }
