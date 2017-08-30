@@ -17,5 +17,19 @@ namespace Cafe
 		}
 
 
-    }
+		/// <summary>
+		/// Rabat på kaffe
+		/// </summary>
+		public int Rabat { get; set; }
+
+		public Cafe()
+		{
+			this.Rabat = 0;
+		}
+
+		public Cafe(int rabat)
+		{
+			Rabat = rabat;
+		}
+	}
 }

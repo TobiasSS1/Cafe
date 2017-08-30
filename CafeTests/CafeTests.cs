@@ -27,6 +27,16 @@ namespace Cafe.Tests
 			string styrke = kaffe.styrke();
 			Assert.AreEqual("stærk", styrke);
 		}
+		[TestMethod()]
+		[ExpectedException(typeof(ArgumentException))]
+		public void PrisTestForMegetRabat()
+		{
+			//Arrange
+			var sortKaffe = new SortKaffe(20);
+
+			//Act
+			int pris = sortKaffe.pris();
+		}
 
 		[TestMethod()]
 
